@@ -2,7 +2,7 @@ window.onload = function(){
     let titulo = document.querySelector('.moviesAddTitulo')
     let formulario = document.querySelector('#formulario');
     let article = document.querySelector('article');
-    let tituloInput = document.querySelector('#titulo')
+    let tituloInput = document.getElementById('titulo')
 
 
     titulo.innerHTML = 'AGREGAR PELÍCULA';

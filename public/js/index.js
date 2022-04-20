@@ -6,7 +6,7 @@ window.onload = function(){
     let fondo = document.querySelector('body');
     let enlace = document.querySelector('a');
     let logoDH = document.querySelector('.logoDH');
-    let menu = document.querySelector('#menu ul li');
+    let menu = document.getElementById('menu');
     
     /*let nombre = prompt('Ingrese su nombre');
     console.log(nombre);
@@ -35,18 +35,14 @@ window.onload = function(){
 logo de Digital House se muestre el menú lateral con id="menu". REVISAR*/
 
     logoDH.addEventListener('click', function(e){
-        console.log(e);
-        console.log(menu);
-        menu.style.display = 'block';
-        // menu.classList.toggle('#menu');
+        menu.classList.toggle('mostrar');
     });
 
     /** 2. En index.ejs, agregar un evento que permita ocultar el menú lateral cuando el
 mouse deje el área del menú. */
 
     menu.addEventListener('mouseout', function(e){
-        console.log(e);
-        menu.style.display = 'none';
+        menu.classList.toggle('mostrar');
     })
 
 }
